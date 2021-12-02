@@ -6,3 +6,135 @@
 blockquote {
   @apply px-4 py-2 bg-gray-100 my-4 dark:bg-gray-900;
 }
+
+/*VERTICAL SCROLLBARS*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #af9563 #dec79a;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width     : 12px;
+  background: #dec79a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #af9563;
+  border-radius   : 20px;
+  border          : 3px solid #dec79a;
+}
+
+
+body {
+  /*global styling*/
+  font-family: 'Work Sans', sans-serif !important;
+  line-height: 1.7 !important;
+  color      : #232324 !important;
+}
+
+::selection,
+mark {
+  /*CUSTOM*/
+  background: #CBAB6C;
+  /*colour of highlights text, mark tag*/
+}
+
+/*.grid.grid-cols-1.gap-4 {
+  //change all text font, line height, and color
+  font-family: 'Work Sans', sans-serif !important;
+  line-height: 1.7 !important;
+  color      : #232324 !important;
+}*/
+
+.border-gray-200 {
+  /*input border style, take out weird box around*/
+  border          : inherit;
+  /*input background color*/
+  background-color: transparent !important;
+}
+
+input, textarea {
+  /*input border style, add back */
+    border: 2px solid rgba(35,35,36,.78)!important;
+}
+
+.border-gray-200:focus-visible {
+/*input color when input is selected*/
+	outline: 2px solid #CBAB6C !important;
+}
+
+.text-gray-900 {
+  /*"Powered by cusdis" text*/
+  color     : #CBAB6C !important;
+  font-style: italic !important;
+}
+
+.bg-gray-200 {
+	/*send button and mod label*/
+	background-color: #CBAB6C !important;
+}
+
+.font-bold {
+    /*send button text*/
+    font-family: 'Syne', sans-serif;
+}
+
+.bg-blue-500 {
+  /*"comment has been sent, wait for approval" box*/
+	background-color: #4A55C7 !important;
+}
+
+.mr-2.font-medium.dark\:text-gray-100 {
+    /*comment author text*/
+    font-weight: 600 !important;
+    margin-top: 2.2rem;
+}
+
+.my-4.pl-4.border-l-2.border-color-gray-200 .mr-2.font-medium.dark\:text-gray-100 {
+  /*remove spacing above comment reply author text*/
+    margin-top: unset;
+}
+
+.my-4 {
+  /*space between comments in comment thread*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+*, ::after, ::before {
+	/*comment thread vertical line */
+	border-color: #232324 !important;
+}
+
+
+.text-gray-500 {
+	/*comment text and reply text color*/
+	color: #232324 !important;
+}
+
+.my-2 {
+  /*comment text only, make less black*/
+	opacity: 0.7;
+}
+
+.text-gray-500.text-sm.dark\:text-gray-400 {
+  /*comment time text styling*/
+	font-style: italic !important;
+	opacity: 0.5 !important;
+}
+
+ol {
+  /*comment Markdown list with numbers*/
+  margin: 0;
+	padding: 0;
+	list-style: decimal;
+}
+
+ul {
+  /*comment Markdown list with bullet list*/
+	margin: 0;
+	padding: 0;
+	list-style: circle;
+}
