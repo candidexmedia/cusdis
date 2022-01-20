@@ -8,7 +8,7 @@ blockquote {
   @apply px-4 py-2 bg-gray-100 my-4 dark:bg-gray-900;
 }
 
-/*VERTICAL SCROLLBARS*/
+/*Custom vertical scrollbars*/
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
